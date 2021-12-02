@@ -1,0 +1,81 @@
+.wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/Masks.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/* ------------ NAVBAR ----------- */
+
+.logo {
+    width: 100px;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    background-color: #00adb5;
+    
+}
+
+/* ----------- SLOGAN ----------- */
+
+.slogan {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+/* ----------- ADVICESAORY--------- */
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #00adb5;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.about {
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(/images/covid-header-2.png);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+/* ------------- Showcase ------------- */
+
+.photo {
+    overflow: hidden;
+    opacity: 0.7;
+    /* width: 100%; */
+    /* height: auto; */
+    transform: scale(1.0);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* -------------- Media Query ------------- */
+
+@media only screen and (max-width: 600px) {
+   .slogan {
+       margin-top: 60px;
+   }
+   .slogan p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 50px;
+   }
+  }
+
